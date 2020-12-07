@@ -4,7 +4,7 @@
 export CC=/usr/bin/x86_64-w64-mingw32-gcc.exe
 export CXX=/usr/bin/x86_64-w64-mingw32-g++.exe
 
-CYGWIN_LIBRARIES="libstdc++-6.dll libgcc_s_seh-1.dll libwinpthread-1.dll SDL2.dll iconv.dll"
+CYGWIN_LIBRARIES="libstdc++-6.dll libgcc_s_seh-1.dll libwinpthread-1.dll SDL2.dll SDL2_ttf.dll libfreetype-6.dll libbz2-1.dll libpng16-16.dll zlib1.dll iconv.dll libncursesw6.dll"
 
 SCRIPTS_DIR=$(readlink -f $(dirname "$0"))
 . "$SCRIPTS_DIR/_common.sh"

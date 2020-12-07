@@ -14,6 +14,7 @@ namespace ed
 
         status_t InitializeRenderer();
         void Run();
+        void Halt();
     };
 
     extern Application* Instance;

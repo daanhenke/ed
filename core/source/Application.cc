@@ -11,7 +11,8 @@ namespace ed
 
     status_t Application::InitializeRenderer()
     {
-        m_renderer = new renderer::GraphicalRenderer();
+        // FIXME: Choose a renderer based on CLI options
+        m_renderer = new renderer::TerminalRenderer();
         m_renderer->Initialize();
 
         return 0;
@@ -25,6 +26,11 @@ namespace ed
         {
             m_renderer->Loop();
         }
+    }
+
+    void Application::Halt()
+    {
+        m_running = false;
     }
 
     Application* Instance;
