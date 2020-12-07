@@ -1,0 +1,8 @@
+TODO Add comments to CMakeLists files
+TODO Make build script work for linux systems
+TODO Define build dependencies in README (Cygwin / ArchLinux)
+
+TODO Create clean script
+TODO Add clang-format for code formatting
+TODO Write a proper config for clang-format
+TODO Push to GitHUb
